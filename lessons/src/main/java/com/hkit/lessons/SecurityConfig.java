@@ -30,11 +30,11 @@ public class SecurityConfig {
             //로그인 성공시 루트 페이지인 / 로 이동하도록 한다.
             .formLogin((formLogin)->formLogin
             		.loginPage("/member/login")
-            		.defaultSuccessUrl("/success"))
+            		.defaultSuccessUrl("/member/signup"))
             //로그아웃 성공시 루트 페이지인 / 로 이동하도록 한다.
             .logout((logout)->logout
             		.logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
-            		.logoutSuccessUrl("/success")
+            		.logoutSuccessUrl("/member/signup")
             		.invalidateHttpSession(true))
             ;
         return http.build();
