@@ -18,10 +18,10 @@ public class Member {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long member_num;
+	private Long memberNum;
 	
 	@Column(unique = true)
-	private String member_id;
+	private String memberId;
 	
 	private String password;
 	
@@ -29,7 +29,7 @@ public class Member {
 	
 	private String phone;
 	
-	private String member_name;
+	private String memberName;
 	
 	private String email;
 	

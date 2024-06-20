@@ -18,6 +18,9 @@ class LessonsApplicationTests {
 	@Autowired
 	private MemberRepository memberRepository;
 	
+	@Autowired
+	private lessonRepository lr;
+	
 	@Test
 	void testCreate() {
 		Member m1 = new Member();
@@ -28,24 +31,23 @@ class LessonsApplicationTests {
 		m1.setGender("M");
 		m1.setInterest("음악");
 		m1.setMbti("INTP");
-		m1.setMember_id("hkit");
-		m1.setMember_name("홍길동");
+		m1.setMemberId("hkit");
+		m1.setMemberName("홍길동");
 		m1.setPassword("1234");
 		m1.setPhone("010-1234-5678");
 		
 		this.memberRepository.save(m1);
 	}
 	
-		@Autowired
-		private lessonRepository lr;
 
 		//@Test
 		void testLesson() {
 			lesson l1 = new lesson();
+			
 			l1.setLname("강의 제목입니다.");
 			l1.setPrice(39800);
 			l1.setCreateDate(LocalDateTime.now());
 			this.lr.save(l1);
-		}
+		} 
 	}
 

@@ -27,9 +27,11 @@ public class SecurityConfig {
             .headers((headers)->headers
             		.addHeaderWriter(new XFrameOptionsHeaderWriter(
             				XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN)))
+            //로그인 성공시 루트 페이지인 / 로 이동하도록 한다.
             .formLogin((formLogin)->formLogin
             		.loginPage("/member/login")
             		.defaultSuccessUrl("/"))
+            //로그아웃 성공시 루트 페이지인 / 로 이동하도록 한다.
             .logout((logout)->logout
             		.logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
             		.logoutSuccessUrl("/")

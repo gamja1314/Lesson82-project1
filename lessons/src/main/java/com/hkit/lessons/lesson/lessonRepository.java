@@ -5,5 +5,5 @@ import java.util.List;
 
 
 public interface lessonRepository extends JpaRepository<lesson, Long> {
-	List<lesson> findByLname(String lname);
+	
 }

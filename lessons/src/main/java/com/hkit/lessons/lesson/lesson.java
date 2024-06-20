@@ -22,7 +22,7 @@ public class lesson {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long lesson_num;
+	private Long lessonNum;
 	
 	@Column(nullable = false, length = 50)
     private String lname;

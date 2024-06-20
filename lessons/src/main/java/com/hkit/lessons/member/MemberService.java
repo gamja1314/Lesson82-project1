@@ -3,10 +3,12 @@ package com.hkit.lessons.member;
 
 
 import java.sql.Date;
+import java.util.Optional;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.hkit.lessons.DataNotFoundException;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -16,16 +18,16 @@ public class MemberService {
 	private final MemberRepository memberRepository;
 	private final PasswordEncoder passwordEncoder;
 	
-	public Member create(String member_id, String email, String password, String phone, String member_name,
+	public Member create(String memberId, String email, String password, String phone, String memberName,
 			String address, Date birth, String interest, String mbti, String gender) {
 		
 		Member member = new Member();
 		
-		member.setMember_id(member_id);
+		member.setMemberId(memberId);
 		member.setPassword(passwordEncoder.encode(password));
 		member.setBirth(birth);
 		member.setPhone(phone);
-		member.setMember_name(member_name);
+		member.setMemberName(memberName);
 		member.setEmail(email);
 		member.setGender(gender);
 		member.setInterest(interest);
@@ -35,7 +37,15 @@ public class MemberService {
 		this.memberRepository.save(member);
 		
 		return member;
-	}
+	} 
 	
+	public Member getMember(String MemberId) {
+		Optional<Member> Member = this.memberRepository.findByMemberId(MemberId);
+		if (Member.isPresent()) {
+			return Member.get();
+		}else {
+			throw new DataNotFoundException("Member not found");
+		}
+	}
 }
 

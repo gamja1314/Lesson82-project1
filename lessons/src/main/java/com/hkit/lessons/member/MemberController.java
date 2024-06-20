@@ -21,6 +21,7 @@ public class MemberController {
     	return "layout";
     }
 
+	
 	@GetMapping("/login")
     public String login() {
     	return "login_form";
