@@ -24,19 +24,19 @@ public class MemberCreateForm {
     @NotEmpty(message = "비밀번호 확인은 필수항목입니다.")
     private String password2;
     
-    @NotEmpty(message = "생년월일은 필수항목입니다.")
+   // @NotEmpty(message = "생년월일은 필수항목입니다.")
     private Date birth;
     
-    @NotEmpty(message = "전화번호는 필수항목입니다.")
+    //@NotEmpty(message = "전화번호는 필수항목입니다.")
     private String phone;
     
-    @NotEmpty(message = "이름은 필수항목입니다.")
+    //@NotEmpty(message = "이름은 필수항목입니다.")
     private String memberName;
     
-    @NotEmpty(message = "성별은 필수항목입니다.")
+    //@NotEmpty(message = "성별은 필수항목입니다.")
     private String gender;
 
-    @NotEmpty(message = "이메일은 필수항목입니다.")
+    //@NotEmpty(message = "이메일은 필수항목입니다.")
     @Email
     private String email;
       
@@ -44,7 +44,7 @@ public class MemberCreateForm {
     
     private String mbti;
     
-    @NotEmpty(message = "주소는 필수항목입니다.")
+    //@NotEmpty(message = "주소는 필수항목입니다.")
     private String address;
     
 
