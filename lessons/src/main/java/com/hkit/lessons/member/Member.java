@@ -35,10 +35,6 @@ public class Member {
 	
 	private String gender;
 	
-	private String interest;
-	
-	private String mbti;
-	
 	private String address;
 
 	

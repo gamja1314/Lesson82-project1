@@ -50,8 +50,7 @@ public class MemberController {
         	ms.create(memberCreateForm.getMemberId(), memberCreateForm.getEmail(),
         			memberCreateForm.getPassword1(), memberCreateForm.getPhone(),
         			memberCreateForm.getMemberName(),  memberCreateForm.getAddress(),
-        			memberCreateForm.getBirth(), memberCreateForm.getInterest(), 
-        			memberCreateForm.getMbti(), memberCreateForm.getGender());
+        			memberCreateForm.getBirth(),memberCreateForm.getGender());
         			
         			
         }catch(DataIntegrityViolationException e) {

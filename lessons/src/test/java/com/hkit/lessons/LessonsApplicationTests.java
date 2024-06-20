@@ -21,7 +21,7 @@ class LessonsApplicationTests {
 	@Autowired
 	private lessonRepository lr;
 	
-	//@Test
+	@Test
 	void testCreate() {
 		Member m1 = new Member();
 		
@@ -29,8 +29,6 @@ class LessonsApplicationTests {
 		m1.setBirth(new Date(1995, 11, 5));
 		m1.setEmail("abc@naver.com");
 		m1.setGender("M");
-		m1.setInterest("음악");
-		m1.setMbti("INTP");
 		m1.setMemberId("hkit");
 		m1.setMemberName("홍길동");
 		m1.setPassword("1234");
@@ -40,7 +38,7 @@ class LessonsApplicationTests {
 	}
 	
 
-		@Test
+		//@Test
 		void testLesson() {
 			lesson l1 = new lesson();
 			

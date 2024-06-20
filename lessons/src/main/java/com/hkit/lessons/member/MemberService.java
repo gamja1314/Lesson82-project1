@@ -20,7 +20,7 @@ public class MemberService {
 	private final PasswordEncoder passwordEncoder;
 	
 	public Member create(String memberId, String email, String password, String phone, String memberName,
-			String address, Date birth, String interest, String mbti, String gender) {
+			String address, Date birth,String gender) {
 		
 		Member member = new Member();
 		
@@ -31,8 +31,6 @@ public class MemberService {
 		member.setMemberName(memberName);
 		member.setEmail(email);
 		member.setGender(gender);
-		member.setInterest(interest);
-		member.setMbti(mbti);
 		member.setAddress(address);
 		
 		this.memberRepository.save(member);
