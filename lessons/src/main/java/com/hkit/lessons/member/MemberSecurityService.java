@@ -1,5 +1,6 @@
 package com.hkit.lessons.member;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -25,6 +26,7 @@ public class MemberSecurityService implements UserDetailsService{
 		Optional<Member>_member = this.meberRepository.findByMemberId(memberId);
 		if(_member.isEmpty()) {
 			throw new UsernameNotFoundException("사용자 찾기 실패");
+			
 		}
 		Member member = _member.get();
 		List<GrantedAuthority> authorities = new ArrayList<>();
