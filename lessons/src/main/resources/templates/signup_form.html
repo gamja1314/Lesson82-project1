@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="/signup_form.css" />
+<body>
+    <form action="login">
+        <table>
+        <tr>
+            <td><h2>회원가입</h2></td>
+        </tr>
+        <tr><td>아이디</td></tr>
+        <tr><td><input type="text" class="text"></td></tr>
+        <tr><td>비밀번호</td></tr>
+        <tr><td><input type="password" class="text"></td></tr>
+        <tr><td>비밀번호 확인</td></tr>
+        <tr><td><input type="password" class="text"></td></tr>
+        <tr><td>이름</td></tr>
+        <tr><td><input type="text" class="text"></td></tr>
+        <tr><td>생년월일</td></tr>
+        <tr><td><input type="date" class="text"></td></tr>
+        <tr><td>전화번호</td></tr>
+        <tr><td><input type="text" class="text" maxlength="3" onkeypress="return isNumber(event)">-
+        		    <input type="text" class="text" maxlength="4" onkeypress="return isNumber(event)">-
+        		    <input type="text" class="text" maxlength="4" onkeypress="return isNumber(event)">
+        </td></tr>
+        <tr><td>성별</td></tr>
+        <tr><td>
+          <input type="radio" name="gender" value="male">남성
+          <input type="radio" name="gender" value="female">여성
+        </td></tr>  
+        <tr><td>이메일</td></tr>
+        <tr><td>
+            <input type="text" class="email"> @
+            <input type="text" class="email_dns">
+                <select class="email-select">
+                    <option value="first">직접입력</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="nate.com">nate.com</option>
+                </select>
+        </td></tr>
+        <tr><td>주소</td></tr>
+        <tr><td><input type="text" id="address" class="text"></td></tr>
+        <tr><td><input type="submit" value="가입하기" class="btn" onclick="alert('가입 성공!')"></td></tr>
+        </table>
+
+        <script>
+        // 이메일 입력 필드와 select 요소 선택
+        const emailInput = document.querySelector('input[class="email"]');
+        const emailDnsInput = document.querySelector('input[class="email_dns"]');
+        const emailSelect = document.querySelector('select[class="email-select"]');
+
+        // select 요소의 값이 변경될 때 이벤트 리스너 등록
+        emailSelect.addEventListener('change', function() {
+          // select 요소의 선택된 옵션 값 가져오기
+          const selectedOption = this.options[this.selectedIndex];
+          const selectedValue = selectedOption.value;
+
+          // 선택된 옵션 값에 따라 이메일 입력 필드 값 설정
+          if (selectedValue === 'first') {
+            emailDnsInput.value = '';
+          } else {
+            emailDnsInput.value = selectedValue;
+          }
+        });
+        </script>
+
+    </form>
+    </body>

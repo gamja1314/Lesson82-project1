@@ -14,7 +14,7 @@ public class MemberCreateForm {
 
 	@Size(min = 3, max = 25)
     @NotEmpty(message = "사용자ID는 필수항목입니다.")
-    private String member_id;
+    private String memberId;
 
 	@Size(min = 7, max = 25)
     @NotEmpty(message = "비밀번호는 필수항목입니다.")
@@ -31,7 +31,7 @@ public class MemberCreateForm {
     private String phone;
     
     @NotEmpty(message = "이름은 필수항목입니다.")
-    private String member_name;
+    private String memberName;
     
     @NotEmpty(message = "성별은 필수항목입니다.")
     private String gender;

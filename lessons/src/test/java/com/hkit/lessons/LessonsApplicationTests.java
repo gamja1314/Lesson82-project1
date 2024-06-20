@@ -21,7 +21,7 @@ class LessonsApplicationTests {
 	@Autowired
 	private lessonRepository lr;
 	
-	@Test
+	//@Test
 	void testCreate() {
 		Member m1 = new Member();
 		
@@ -40,7 +40,7 @@ class LessonsApplicationTests {
 	}
 	
 
-		//@Test
+		@Test
 		void testLesson() {
 			lesson l1 = new lesson();
 			

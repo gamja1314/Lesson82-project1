@@ -1,0 +1,71 @@
+table {
+    width: 50%;
+    height: 50%;
+    margin: auto;      
+}
+.email, .email_dns, .email-select {
+    display: inline-block;
+    font-size: 15px;
+    border: 0;
+    border-color: lightgray;
+    border-radius: 15px;
+    outline: none;
+    padding: 6px 10px; /* 상하 6px, 좌우 10px */
+    background-color: rgb(233,233,233);
+    vertical-align: middle; /* 수직 정렬 */
+  }
+  
+  .email {
+    margin-right: 5px;
+  }
+  
+  .email-select {
+    margin-left: 5px;
+    width: auto;
+  }
+
+.text {
+    width: 250px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233,233,233);
+}
+select {
+    width: 100px;
+    height: 32px;
+    font-size: 15px;
+    border: 1;
+    border-color: lightgray;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+}
+.btn {
+    width: 262px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    background-color: rgb(164, 199, 255);
+}
+.btn:active {
+    width: 262px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(61, 135, 255);
+}
+
+#address {
+  width: 500px; 
+ }

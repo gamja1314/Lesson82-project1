@@ -45,9 +45,9 @@ public class MemberController {
         }
         
         try {
-        	ms.create(memberCreateForm.getMember_id(), memberCreateForm.getEmail(),
+        	ms.create(memberCreateForm.getMemberId(), memberCreateForm.getEmail(),
         			memberCreateForm.getPassword1(), memberCreateForm.getPhone(),
-        			memberCreateForm.getMember_name(),  memberCreateForm.getAddress(),
+        			memberCreateForm.getMemberName(),  memberCreateForm.getAddress(),
         			memberCreateForm.getBirth(), memberCreateForm.getInterest(), 
         			memberCreateForm.getMbti(), memberCreateForm.getGender());
         			
