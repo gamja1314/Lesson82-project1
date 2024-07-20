@@ -1,0 +1,24 @@
+[submodule "LSH"]
+	path = LSH
+	url = https://github.com/HKIT-201/LSH.git
+[submodule "LSH2"]
+	path = LSH2
+	url = https://github.com/HKIT-201/LSH2.git
+[submodule "LSH3"]
+	path = LSH3
+	url = https://github.com/HKIT-201/LSH3.git
+[submodule "LSH4"]
+	path = LSH4
+	url = https://github.com/HKIT-201/LSH4.git
+[submodule "LSH5"]
+	path = LSH5
+	url = https://github.com/HKIT-201/LSH5.git
+[submodule "LSH6"]
+	path = LSH6
+	url = https://github.com/HKIT-201/LSH6.git
+[submodule "LSH7"]
+	path = LSH7
+	url = https://github.com/HKIT-201/LSH7.git
+[submodule "LSH8"]
+	path = LSH8
+	url = https://github.com/HKIT-201/LSH8.git
