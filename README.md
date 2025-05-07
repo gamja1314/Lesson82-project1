@@ -10,6 +10,10 @@
 
 - 2024.06.07 ~ 2024.07.19
 
+## 💻 코드 구성
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gamja1314&repo=Lesson82-project1&layout=compact&theme=light&title_color=1E90FF&text_color=151515&bg_color=ffffff&border_radius=10)
+
 ## 🛠️ 기술 스택
 
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)](https://spring.io/projects/spring-boot)
