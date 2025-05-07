@@ -10,7 +10,7 @@
 
 - 2024.06.07 ~ 2024.07.19
 
-##  ✏️
+## 🛠️ 기술 스택
 
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com/)
